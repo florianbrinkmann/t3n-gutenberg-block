@@ -1,0 +1,14 @@
+.wp-block-t3n-gutenberg-block-post .author-avatar {
+    position: relative;
+
+    button {
+        background: rgba( 255, 255, 255, .8 );
+        position: absolute;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: none;
+        }
+    }
+}
