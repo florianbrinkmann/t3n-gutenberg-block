@@ -19,13 +19,10 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-add_action( 'enqueue_block_editor_assets', 't3n53_enqueue_block_editor_assets' );
-add_action( 'enqueue_block_assets', 't3n53_enqueue_block_assets' );
-
 /**
  * Enqueue block script and backend stylesheet.
  */
-function t3n53_enqueue_block_editor_assets() {
+add_action( 'enqueue_block_editor_assets', function() {
 	wp_enqueue_script(
 		't3n53-editor-script',
 		plugins_url( 'assets/js/editor.blocks.js', __FILE__ ),
@@ -36,14 +33,14 @@ function t3n53_enqueue_block_editor_assets() {
 		't3n53-editor-style',
 		plugins_url( 'assets/css/editor.blocks.css', __FILE__ )
 	);
-}
+} );
 
 /**
- * Enqueue block assets.
+ * Enqueue styles for backend and frontend.
  */
-function t3n53_enqueue_block_assets() {
+add_action( 'enqueue_block_assets', function() {
 	wp_enqueue_style(
 		't3n53-frontend-style',
 		plugins_url( 'assets/css/frontend.blocks.css', __FILE__ )
 	);
-}
+} );
