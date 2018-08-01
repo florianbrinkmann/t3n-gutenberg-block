@@ -4,7 +4,7 @@
   "description": "t3n Gutenberg block example",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FlorianBrinkmann/fanoe.git"
+    "url": "https://github.com/florianbrinkmann/t3n-gutenberg-block.git"
   },
   "scripts": {
     "build:production": "webpack --config webpack.config.production.js",
