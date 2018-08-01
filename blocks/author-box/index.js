@@ -12,9 +12,9 @@ const {
 } = wp.components;
 
 registerBlockType( 't3n53/author-box', {
-	title: 'Author box',
+	title: 'Autorenbox',
 	icon: 'admin-users',
-	category: 'widgets',
+	category: 'common',
 	attributes: {
 		name: {
 			type: 'string',
