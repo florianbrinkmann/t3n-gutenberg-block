@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
 	mode: 'production',
-	entry: ['./blocks/post/index.js', './blocks/post/editor.scss'],
+	entry: ['./blocks/author-box/index.js', './blocks/author-box/editor.scss', './blocks/author-box/frontend.scss'],
 	output: {
 		path: path.resolve(__dirname, 'assets'),
 		filename: 'js/editor.blocks.js',
