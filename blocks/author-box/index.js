@@ -20,6 +20,7 @@ registerBlockType( 't3n53/author-box', {
 			type: 'string',
 			source: 'text',
 			selector: '.author-name',
+			default: '',
 		},
 		imgSrc: {
 			type: 'string',
